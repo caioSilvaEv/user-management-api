@@ -44,3 +44,17 @@ DELETE /users/{id}
 2. Atualize o application.properties
 3. Rode a aplicação
 4. Teste os endpoints com Postman ou Insomnia
+   
+## Como executar o projeto
+
+1. Clonar o repositório
+
+git clone (https://github.com/caioSilvaEv/user-management-api.git)
+
+2. Entrar na pasta
+
+cd user-management-api
+
+3. Executar o projeto
+
+./mvnw spring-boot:run
