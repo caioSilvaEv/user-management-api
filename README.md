@@ -1,8 +1,10 @@
-# User Management API
+# 🚀 User Management API
 
-REST API desenvolvida com Java e Spring Boot para gerenciamento de usuários.
+REST API desenvolvida com **Java e Spring Boot** para gerenciamento de usuários.
 
-## Tecnologias
+---
+
+## 🛠 Tecnologias
 
 - Java
 - Spring Boot
@@ -10,7 +12,9 @@ REST API desenvolvida com Java e Spring Boot para gerenciamento de usuários.
 - MySQL
 - Maven
 
-## Funcionalidades
+---
+
+## 📌 Funcionalidades
 
 - Criar usuário
 - Listar usuários
@@ -18,43 +22,53 @@ REST API desenvolvida com Java e Spring Boot para gerenciamento de usuários.
 - Atualizar usuário
 - Deletar usuário
 
-## Endpoints
+---
 
-GET /users
+## 🔗 Endpoints
 
-POST /users
+| Método | Rota            | Descrição                |
+|--------|----------------|------------------------|
+| GET    | /users         | Lista todos usuários   |
+| POST   | /users         | Cria um usuário        |
+| GET    | /users/{id}    | Busca por ID           |
+| PUT    | /users/{id}    | Atualiza usuário       |
+| DELETE | /users/{id}    | Deleta usuário         |
 
-GET /users/{id}
+---
 
-PUT /users/{id}
+## 📥 Exemplo de requisição
 
-DELETE /users/{id}
-
-## Exemplo JSON
-
+```json
 {
- "nome": "Caio",
- "email": "caio@email.com",
- "idade": 19
+  "nome": "Caio",
+  "email": "caio@email.com",
+  "idade": 19
 }
-
-## Como rodar o projeto
-
-1. Configure o banco MySQL
-2. Atualize o application.properties
-3. Rode a aplicação
-4. Teste os endpoints com Postman ou Insomnia
-   
-## Como executar o projeto
-
+⚙️ Como rodar o projeto
 1. Clonar o repositório
-
-git clone (https://github.com/caioSilvaEv/user-management-api.git)
-
-2. Entrar na pasta
-
+git clone https://github.com/caioSilvaEv/user-management-api.git
 cd user-management-api
+2. Configurar o banco de dados
 
+Edite o arquivo:
+
+application.properties
 3. Executar o projeto
-
 ./mvnw spring-boot:run
+🧪 Testando a API
+
+Você pode usar:
+
+Postman
+
+Insomnia
+
+📚 Aprendizados
+
+Criação de API REST
+
+Arquitetura em camadas (Controller, Service, Repository)
+
+Integração com banco de dados
+
+Uso do Spring Boot
